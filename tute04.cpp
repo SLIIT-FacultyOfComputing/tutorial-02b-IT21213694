@@ -27,3 +27,17 @@ int main() {
   std::cout << std::endl;
   return 0;
 }
+long Factional (int no)
+{
+  int fact = 1,i;
+
+  for(i = 1; i < no;i++)
+    {
+      fact = fact *i;
+    }
+  return fact;
+}
+long nCr(int n,int r)
+{
+  return Factional(n)/Factional(r)*(Factional(n-r));
+}
